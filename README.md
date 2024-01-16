@@ -63,10 +63,20 @@ However, when it comes to excellence, Piedmont and Alsace stand out as outliers.
 
 ![excellent_percentage_province](https://github.com/st9ho3/Project_Enoteca/assets/148724871/4e38e439-7dc7-48dc-b2ea-87771428fa6e)
 
-### In the next step,I will try to find cheap excellent wines all over the world. I guess it's worth check. [View Query](Queries/Query_5.txt)
+## "Discovering Hidden Gems: Analyzing Wineries Worldwide for Affordable Excellence"
+
+ In the next step,I will try to find cheap excellent wines all over the world. I guess it's worth check. [View Query](Queries/Query_5.txt)
 
 
 
 ![no_excellent_wines](https://github.com/st9ho3/Project_Enoteca/assets/148724871/b43fe502-157e-4735-98d8-14e758662d3f)
 
-It's very interresting but on this price range you can't find an excelent wine all over the world. So I will narrow my anticipation and filtering more in order to analyze wineries in the previously selected countries based on their wine cost and winery score (points). The focus is on identifying wineries that offer competitive pricing while maintaining the highest possible quality within that price range. 
+It's very interresting but on this price range you can't find an excelent wine all over the world. So I will narrow my anticipation and filtering more in order to analyze wineries in the previously selected countries based on their wine cost and winery score (points). The focus is on identifying wineries that offer competitive pricing while maintaining the highest possible quality within that price range. [View query](Queries/Query_6.txt)
+
+
+![winery_price_distribution](https://github.com/st9ho3/Project_Enoteca/assets/148724871/7d3ddd6b-db03-4e42-92fd-4966badec9f4)
+
+In terms of wineries, we aim to select a representative sample from each country, acknowledging the vast multitude available. This selection allows us to gain insights into their performance and assess whether they align with their respective country's trends. An intriguing observation emerges—price and score do not consistently follow each other. This discrepancy motivates us to delve deeper, as it suggests the presence of hidden gems that offer exceptional quality at affordable prices. Our exploration goes beyond the obvious, seeking out these treasures and unveiling the nuances that make each winery unique.
+
+
+![wineries_score_pricing](https://github.com/st9ho3/Project_Enoteca/assets/148724871/436d426c-97f0-472e-9be3-ddc2c18d6277)
