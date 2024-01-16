@@ -1,0 +1,19 @@
+Query_1_Create_table
+
+
+CREATE TABLE wine_reviews
+  (
+     country               VARCHAR(255),
+     description           VARCHAR(1000),
+     designation           VARCHAR(500),
+     points                INTEGER,
+     price                 INTEGER,
+     province              VARCHAR(255),
+     region_1              VARCHAR(255),
+     region_2              VARCHAR(255),
+     taster_name           VARCHAR(255),
+     taster_twitter_handle VARCHAR(255),
+     title                 VARCHAR(255),
+     variety               VARCHAR(255),
+     winery                VARCHAR(255)
+  );

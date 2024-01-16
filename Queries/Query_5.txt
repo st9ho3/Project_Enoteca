@@ -1,0 +1,28 @@
+Query_5
+
+-- Selecting country, winery, average score, average price, and ranking
+SELECT country,
+       winery,
+       avg_score,
+       avg_price,
+       -- Calculating ranking within each country based on average price and descending average score
+       Rank()
+         OVER (
+           partition BY country
+           ORDER BY avg_price, avg_score DESC ) AS ranking
+FROM
+-- Subquery to calculate average score and average price per winery and country
+(SELECT country,
+        winery,
+        Round(Avg(points), 2) AS avg_score,
+        Round(Avg(price), 2)  AS avg_price
+ FROM   wine_view
+ GROUP  BY 1,
+           2) AS cte
+-- Filtering the results based on average price, average score, and score range
+WHERE  avg_price < 250
+       AND avg_score > 96 
+ 
+
+
+
