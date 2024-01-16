@@ -84,6 +84,8 @@ An intriguing observation emerges—price and score do not consistently follow e
 
 ![wineries_score_pricing](https://github.com/st9ho3/Project_Enoteca/assets/148724871/436d426c-97f0-472e-9be3-ddc2c18d6277)
 
+## Decoding the Enigma: A Systematic Exploration of the Interplay Between Price and Quality in the Realm of Wines
+
 I will utilize this query to identify the top varieties each country offers within the specified price range. I intend to narrow down my search to the three best varieties. [View Query](Queries/Query_7.txt)
 
 
@@ -92,3 +94,5 @@ I will utilize this query to identify the top varieties each country offers with
 As we delve deeper into the data, an interesting revelation unfolds—within this specific price range, pricing and score seem to dance to their own tunes. It's a delightful paradox: expensive doesn't necessarily translate to exceptional, and exceptional doesn't always come with a hefty price tag. [View query](Queries/Query_7a.txt)
 
 ![variety_price_score](https://github.com/st9ho3/Project_Enoteca/assets/148724871/f0a0c827-18a9-4a1d-8cec-bf55c4457678)
+
+As we examine the variety available, we discover a diverse range of options across different price points. Whether seeking cost-effective yet high-quality choices like Shiraz, Syrah, and Merlot-Grenache, or indulging in premium selections such as the distinguished Caprettone, refined Muller-Thurgau, and exquisite Auxerrois, our exploration encompasses a spectrum of flavors and preferences. This allows us to cater to a broad audience, offering both accessible treasures and luxurious delights in the world of wine.
