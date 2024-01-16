@@ -96,3 +96,20 @@ As we delve deeper into the data, an interesting revelation unfolds—within thi
 ![variety_price_score](https://github.com/st9ho3/Project_Enoteca/assets/148724871/f0a0c827-18a9-4a1d-8cec-bf55c4457678)
 
 As we examine the variety available, we discover a diverse range of options across different price points. Whether seeking cost-effective yet high-quality choices like Shiraz, Syrah, and Merlot-Grenache, or indulging in premium selections such as the distinguished Caprettone, refined Muller-Thurgau, and exquisite Auxerrois, our exploration encompasses a spectrum of flavors and preferences. This allows us to cater to a broad audience, offering both accessible treasures and luxurious delights in the world of wine.
+
+## Unveiling Flavor Dynamics: A Comprehensive Exploration into Price, Frequency, and Correlations
+
+For the final phase of our investigation, I aim to conduct an in-depth analysis of flavors to extract comprehensive insights. The objective is to discern which flavors exhibit a higher price point and greater frequency within our target customer base. Additionally, I seek to understand if certain flavors correlate with higher scores and to explore potential interaction patterns among them. Are there discernible patterns emerging from the intricate interplay of flavors? Our quest is to unravel these nuanced relationships. [View query](Queries/Query_8.txt)
+
+![flavors_distribution_table](https://github.com/st9ho3/Project_Enoteca/assets/148724871/3f3d723e-5dbb-4538-95e1-012cb8b1cd58)
+
+
+![flavors_distribution](https://github.com/st9ho3/Project_Enoteca/assets/148724871/29edaef1-8cf4-4cda-b129-6034b61b4a02)
+
+
+Particularly intriguing findings come to light, with the first four flavors accounting for more than half of the total wines. Within the realm of flavors, we uncover fascinating insights, especially regarding pricing dynamics. Notably, as we explore less frequently encountered flavors like licorice, espresso, coconut, and eucalyptus, a discernible trend in pricing activity begins to emerge. While the negative correlation is not overwhelmingly strong, it is perceptible. It's also noteworthy that these aforementioned flavors command a significantly higher price tag, exceeding 50% when compared to the more common fruity notes, such as apple, citrus, quince, and apricot.
+
+
+
+![flavors_price_to _frequency](https://github.com/st9ho3/Project_Enoteca/assets/148724871/6c16a468-e08c-4ec5-aa73-a1b38d495960)
+
