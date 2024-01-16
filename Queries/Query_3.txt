@@ -1,7 +1,0 @@
-Query_3
-
-SELECT Max(points)                        AS highest_grade,
-       Min(points)                        AS lowest_grade,
-       Percentile_cont(0.5)
-         within GROUP ( ORDER BY points ) AS median
-FROM   wine_view 
