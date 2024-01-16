@@ -1,5 +1,7 @@
 Query_8
 
+-- Selecting flavor, frequency, average score, and average price for wines based on flavor characteristics
+
 SELECT 
     flavor,         
     frequency,      
@@ -7,6 +9,7 @@ SELECT
     avg_price       
 FROM  
     (SELECT
+        -- Categorizing flavors based on description patterns
         CASE
             WHEN description LIKE '%espresso%' THEN 'espresso'
             WHEN description LIKE '%licorice%' THEN 'licorice'
@@ -34,5 +37,4 @@ FROM
      FROM   wine_view
      GROUP  BY 1
      ORDER  BY 2 DESC) AS cte
-WHERE  flavor IS NOT NULL;  
-
+WHERE  flavor IS NOT NULL; -- Filtering out NULL values to get meaningful results
