@@ -18,5 +18,15 @@ To establish a preliminary understanding of the wine data, I will begin by clean
 
 Additionally, I will temporarily exclude certain columns, such as reviewer-related columns, as I aim to obtain an initial overview of the wines only. These changes will be saved in a view, which I will subsequently use to focus and analyze the wine data further.
 
+As we proceed, my exploration of the data will focus on the geographic aspect. I aim to identify the top-performing countries in terms of both wine production volume and quality. This entails examining the largest wine producers and assessing the proportion of high-quality and well-acclaimed wines they contribute to the total production percentage.
 
+## Defining "good" quality
+Before delving further, let's establish the criteria for defining `good` quality. This clarification will guide our analysis and ensure a consistent and meaningful assessment of wine quality in the subsequent exploration of the data. [View query](Queries/Query_3.txt)
 
+![max_min_median_score_values](https://github.com/st9ho3/Project_Enoteca/assets/148724871/05f8e339-2238-47ee-813b-664e76bb2285)
+
+For the purpose of our analysis, we will define a "good" wine as having a rating greater than **88**, while an "excellent" wine will be considered to have a rating exceeding **95**. These thresholds will serve as our benchmarks for evaluating and categorizing wine quality.
+
+## Exploring Wine Production and Quality Across Countries and Provinces: Insights into Volume, Excellence, and Regional Dynamics
+
+Next, I aim to determine the overall wine production for each country and assess the respective proportions of good and excellent wines based on that total.
