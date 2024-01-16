@@ -45,3 +45,28 @@ The notable trend here is the consistent quality performance of the top three co
 ![excellent_percentage_new](https://github.com/st9ho3/Project_Enoteca/assets/148724871/a3f59b92-996b-481b-bd6f-404e0b7f2601)
 
 Additionally, Austria, despite its lower production volume, impressively generates four times more excellent wines than the other two countries in this category. Furthermore, Portugal exhibits a remarkable achievement, producing twice as many excellent wines as Spain. These observations highlight the potential for quality excellence in regions with varying and lower production volumes.
+
+### Running the same query for provinces provides additional interesting insights. [View here](Queries/Query_4b.txt)
+
+![good_wines_table_province](https://github.com/st9ho3/Project_Enoteca/assets/148724871/48068c54-0b5b-4356-a5de-465dba4db5c8)
+
+![province_wine_market_share](https://github.com/st9ho3/Project_Enoteca/assets/148724871/6d81a3e4-fb5c-479c-b30e-64c0c8d382e0)
+
+California emerges as a significant wine producer with both high volume and consistently decent quality. Washington and Oregon, forming part of the US trio, showcase the potential to contend with Italian and French regions for the title of producing good-quality wines.
+
+
+![good_wines_province](https://github.com/st9ho3/Project_Enoteca/assets/148724871/f04220a2-8ffe-49db-9d3f-e85a853493e8)
+
+However, when it comes to excellence, Piedmont and Alsace stand out as outliers. Despite other regions' notable production volumes, these two provinces distinguish themselves by consistently producing wines of exceptional quality. This further emphasizes the nuanced dynamics within different wine-producing regions.
+
+
+
+![excellent_percentage_province](https://github.com/st9ho3/Project_Enoteca/assets/148724871/4e38e439-7dc7-48dc-b2ea-87771428fa6e)
+
+### In the next step,I will try to find cheap excellent wines all over the world. I guess it's worth check. [View Query](Queries/Query_5.txt)
+
+
+
+![no_excellent_wines](https://github.com/st9ho3/Project_Enoteca/assets/148724871/b43fe502-157e-4735-98d8-14e758662d3f)
+
+It's very interresting but on this price range you can't find an excelent wine all over the world. So I will narrow my anticipation and filtering more in order to analyze wineries in the previously selected countries based on their wine cost and winery score (points). The focus is on identifying wineries that offer competitive pricing while maintaining the highest possible quality within that price range. 
