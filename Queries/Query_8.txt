@@ -1,0 +1,40 @@
+Query_8
+
+-- Selecting flavor, frequency, average score, and average price for wines based on flavor characteristics
+
+SELECT 
+    flavor,         
+    frequency,      
+    avg_score,      
+    avg_price       
+FROM  
+    (SELECT
+        -- Categorizing flavors based on description patterns
+        CASE
+            WHEN description LIKE '%espresso%' THEN 'espresso'
+            WHEN description LIKE '%licorice%' THEN 'licorice'
+            WHEN description LIKE '%apricot%' THEN 'apricot'
+            WHEN description LIKE '%cinnamon%' THEN 'cinnamon'
+            WHEN description LIKE '%citrus%' OR description LIKE '%lemon%' THEN 'citrus'
+            WHEN description LIKE '%quince%' THEN 'quince'
+            WHEN description LIKE '%caramel%' OR description LIKE '%carmel%' THEN 'caramel'
+            WHEN description LIKE '%coconut%' THEN 'coconut'
+            WHEN description LIKE '%eucalyptus%' THEN 'eucalyptus'
+            WHEN description LIKE '%vanilla%' THEN 'vanilla'
+            WHEN description LIKE '%oak%' THEN 'oak'
+            WHEN description LIKE '%cherry%' THEN 'cherry'
+            WHEN description LIKE '%spice%' OR description LIKE '%spicy%' THEN 'spice'
+            WHEN description LIKE '%apple%' THEN 'apple'
+            WHEN description LIKE '%berry%' THEN 'berry'
+            WHEN description LIKE '%pepper%' THEN 'pepper'
+            WHEN description LIKE '%cranberry%' THEN 'cranberry'
+            WHEN description LIKE '%leather%' THEN 'leather'
+            WHEN description LIKE '%fennel%' THEN 'fennel'
+        END AS "flavor",
+        COUNT(*) AS frequency,                  -- Count of occurrences for each flavor
+        ROUND(AVG(points), 2) AS avg_score,    -- Average points for each flavor
+        ROUND(AVG(price), 2) AS avg_price      -- Average price for each flavor
+     FROM   wine_view
+     GROUP  BY 1
+     ORDER  BY 2 DESC) AS cte
+WHERE  flavor IS NOT NULL; -- Filtering out NULL values to get meaningful results

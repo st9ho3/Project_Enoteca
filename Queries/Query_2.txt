@@ -1,0 +1,26 @@
+Query_2_View_creation
+
+--Create View
+CREATE VIEW wine_view
+AS
+  SELECT country,
+         description,
+         points,
+         price,
+         province,
+         region_1,
+         variety,
+         title,
+         winery
+  FROM   wine_reviews
+  WHERE  country IS NOT NULL
+         AND description IS NOT NULL
+         AND points IS NOT NULL
+         AND price != 0
+         AND price < 1000
+         AND price IS NOT NULL
+         AND province IS NOT NULL
+         AND title IS NOT NULL
+         AND variety IS NOT NULL
+         AND winery IS NOT NULL; 
+

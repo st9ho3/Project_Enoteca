@@ -1,0 +1,45 @@
+Query_4
+
+-- Selecting country, good wines percentage, excellent wines percentage,
+-- excellent wines number, good wines number, and total number
+SELECT   country,
+         good_wines_percentage,
+         excellent_wines_percentage,
+         excellent_wines_number,
+         good_wines_number,
+         total_number
+FROM     (
+                  -- Subquery to calculate statistics for each country
+                  SELECT   country,
+                           -- Calculating the percentage of good wines (points between 88 and 95)
+                           Round( Count( DISTINCT
+                           CASE
+                                    WHEN points BETWEEN 88 AND      95 THEN title
+                           END ) * 100.0 / Count(DISTINCT title), 2 ) AS good_wines_percentage,
+                           -- Calculating the percentage of excellent wines (points between 96 and 100)
+                           Round( Count( DISTINCT
+                           CASE
+                                    WHEN points BETWEEN 96 AND      100 THEN title
+                           END ) * 100.0 / Count(DISTINCT title), 2 ) AS excellent_wines_percentage,
+                           -- Assigning rankings based on the count of good wines
+                           Dense_rank() OVER ( ORDER BY Count( DISTINCT
+                           CASE
+                                    WHEN points BETWEEN 88 AND      95 THEN title                           
+                           END ) DESC ) AS ranking,
+                           -- Counting the number of distinct excellent wines for each country
+                           Count( DISTINCT
+                           CASE
+                                    WHEN points BETWEEN 96 AND      100 THEN title
+                           END ) AS excellent_wines_number,
+                           -- Counting the number of distinct good wines for each country
+                           Count( DISTINCT
+                           CASE
+                                    WHEN points BETWEEN 88 AND      95 THEN title
+                           END ) AS good_wines_number,
+                           -- Counting the total number of distinct wines for each country
+                           Count(DISTINCT title) AS total_number
+                  FROM wine_view
+                  group BY country)  AS rankings -- Filtering for countries within the top 10 rankings
+WHERE    ranking <= 10                           -- Sorting results by total number in descending order and good wines percentage in descending order
+ORDER BY total_number DESC,
+         good_wines_percentage DESC;
