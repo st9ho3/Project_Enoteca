@@ -31,6 +31,6 @@ FROM   (
                                 'Portugal', 'Argentina', 'Chile', 'Germany',
                                 'Austria', 'Australia' )) AS ctd
 -- Filtering the results based on ranking
-WHERE  ranking < 4; 
+WHERE  ranking < 4 
 ORDER BY
 	avg_score DESC
