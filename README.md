@@ -7,4 +7,9 @@
 --We are also interested in exploring opportunities within the budget-friendly market segment while maintaining a focus on quality. Assessing the feasibility of offering affordable yet high-quality options is crucial, as we aim to cater to the average consumer and ensure a diverse range of choices.
 
 
---I start by creating the table which I will use about my analysis.
+--I start by creating the table which I will use about my analysis. (View Query)
+
+
+![table_creation](https://github.com/st9ho3/Project_Enoteca/assets/148724871/5635fb47-fff7-455e-8617-847acb06718f)
+
+
