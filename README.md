@@ -84,4 +84,11 @@ An intriguing observation emerges—price and score do not consistently follow e
 
 ![wineries_score_pricing](https://github.com/st9ho3/Project_Enoteca/assets/148724871/436d426c-97f0-472e-9be3-ddc2c18d6277)
 
-# Updating Soon ...
+I will utilize this query to identify the top varieties each country offers within the specified price range. I intend to narrow down my search to the three best varieties. [View Query](Queries/Query_7.txt)
+
+
+![best_varieties](https://github.com/st9ho3/Project_Enoteca/assets/148724871/2e675054-c810-435b-8df8-18b4ee52312e)
+
+As we delve deeper into the data, an interesting revelation unfolds—within this specific price range, pricing and score seem to dance to their own tunes. It's a delightful paradox: expensive doesn't necessarily translate to exceptional, and exceptional doesn't always come with a hefty price tag. [View query](Queries/Query_7a.txt)
+
+![variety_price_score](https://github.com/st9ho3/Project_Enoteca/assets/148724871/f0a0c827-18a9-4a1d-8cec-bf55c4457678)
