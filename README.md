@@ -7,7 +7,7 @@ We are embarking on an analysis of data obtained from wine testers who have asse
 We are also interested in exploring opportunities within the budget-friendly market segment while maintaining a focus on quality. Assessing the feasibility of offering affordable yet high-quality options is crucial, as we aim to cater to the average consumer and ensure a diverse range of choices.
 
 
-I start by creating the table which I will use about my analysis. [View Query](Queries/Query_1_Create_table.txt)
+I start by creating the table which I will use about my analysis. [View Query](Queries/Query_1.txt)
 
 
 ![table_creation](https://github.com/st9ho3/Project_Enoteca/assets/148724871/5635fb47-fff7-455e-8617-847acb06718f)
@@ -16,7 +16,7 @@ I start by creating the table which I will use about my analysis. [View Query](Q
 
 To establish a preliminary understanding of the wine data, I will begin by cleaning out any null values in key columns. Specifically, I will exclude null values in the key columns such as `country`, `description`, `points`, `price`, `province`, `title`, `variety`, and `winery`. The `region_1` and `region_2` columns will not undergo this cleaning process, as I can rely on the `province` and `country` columns to provide a general idea about the location.
 
-Additionally, I will temporarily exclude certain columns, such as reviewer-related columns, as I aim to obtain an initial overview of the wines only. These changes will be saved in a view, which I will subsequently use to focus and analyze the wine data further. [View query](Queries/Query_2_View_creation.txt)
+Additionally, I will temporarily exclude certain columns, such as reviewer-related columns, as I aim to obtain an initial overview of the wines only. These changes will be saved in a view, which I will subsequently use to focus and analyze the wine data further. [View query](Queries/Query_2.txt)
 
 ![View_creation](https://github.com/st9ho3/Project_Enoteca/assets/148724871/df55a5c9-eefe-4c60-8b7a-3ff48045112f)
 
